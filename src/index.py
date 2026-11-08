@@ -29,7 +29,7 @@ def testaa_mehu(mehua):
     print(f"Mehuvarasto: {mehua}")
 
 
-def testaa_virhetilanteet(mehua, olutta):
+def testaa_virhetilanteet():
     print("Virhetilanteita:")
     print("Varasto(-100.0);")
     huono = Varasto(-100.0)
@@ -39,6 +39,7 @@ def testaa_virhetilanteet(mehua, olutta):
     huono = Varasto(100.0, -50.7)
     print(huono)
 
+def testaa_virhetilanteet2(mehua, olutta):
     print(f"Olutvarasto: {olutta}")
     print("olutta.lisaa_varastoon(1000.0)")
     olutta.lisaa_varastoon(1000.0)
@@ -70,7 +71,8 @@ def main():
     tulosta_varastot(mehua, olutta)
     testaa_getterit(olutta)
     testaa_mehu(mehua)
-    testaa_virhetilanteet(mehua, olutta)
+    testaa_virhetilanteet()
+    testaa_virhetilanteet2(mehua, olutta)
     testaa_otto(mehua, olutta)
 
 
